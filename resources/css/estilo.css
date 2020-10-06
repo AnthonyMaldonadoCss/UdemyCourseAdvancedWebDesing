@@ -17,7 +17,7 @@ header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../img/fondo_principal.JPG);
 	background-size: cover;
 	background-position: center;
-	height: 100vh;
+	height: 120vh;
 	background-attachment: fixed;
 }
 .row {
@@ -74,6 +74,16 @@ header {
 	margin-left: 150px;
 }
 /*****************************/
+h2 {
+	text-align: center;
+}
+
+
+
+
+
+
+
 
 /***ICONOS PRINCIPAL***/
 .iconos-header {
@@ -105,3 +115,25 @@ display: inline-block;
 	color:#d63031;
 }
 /**********************/
+
+.conoceme {
+	margin-top: 5px;
+}
+.presentacion {
+	line-height: 145%;
+	width: 70%;
+	margin-left: 15%;
+	text-align: center;
+}
+.IUJO {
+	line-height: 145%;
+}
+.IUJO h3 {
+	text-align: center;
+}
+
+/**********************/
+
+.concretemos p {
+	text-align: center;
+}
