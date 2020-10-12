@@ -30,6 +30,7 @@ header {
 	float: right;
 	list-style: none;
 	margin-top: 55px;
+	font-size: 115%;
 }
 .menu-navegacion li {
 	display: inline-block;
@@ -78,13 +79,6 @@ h2 {
 	text-align: center;
 }
 
-
-
-
-
-
-
-
 /***ICONOS PRINCIPAL***/
 .iconos-header {
 	text-align: center;
@@ -117,13 +111,21 @@ display: inline-block;
 /**********************/
 
 .conoceme {
-	margin-top: 5px;
+	background:linear-gradient(#badc58,#f1f2f6) 
+}
+
+.conoceme h2 {
+	border-bottom: 2px solid #d63031;
+	width: 455px;
+	margin: auto;
+	line-height: 2.2;
 }
 .presentacion {
 	line-height: 145%;
 	width: 70%;
 	margin-left: 15%;
 	text-align: center;
+	font-size: 130%;
 }
 .IUJO {
 	line-height: 145%;
@@ -134,6 +136,30 @@ display: inline-block;
 
 /**********************/
 
+.concretemos {
+	height: 70vh; 
+	background: linear-gradient( #f1f2f6,#F8EFBA)  
+}
+.concretemos .detalles{
+	margin-left: 140px;
+}
 .concretemos p {
 	text-align: center;
 }
+.concretemos div details ul { list-style: inside; }
+.concretemos div details { cursor: pointer; }
+.concretemos div details summary {color: #d63031; } 
+.concretemos div details summary b {color: black;}
+
+/***********************************/
+
+.donde { 
+	background: linear-gradient(#F8EFBA,#f7d794);
+}
+
+.donde div:last-child {
+	margin-left: 355px;
+}
+.donde {height: 65vh;}
+.donde p, h3{ text-align: center;}
+
