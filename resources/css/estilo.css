@@ -6,7 +6,7 @@
 }
 html,body{
 	background-color: #fff;
-	color: #555;
+	color: #2f3640;
 	font-family: 'Lato','Arial', sans-serif;
 	font-weight: 300;
 	font-size: 20px;
@@ -16,13 +16,24 @@ html,body{
 header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../img/fondo_principal.JPG);
 	background-size: cover;
-	background-position: center;
-	height: 120vh;
+	background-repeat: round;
+	
 	background-attachment: fixed;
+}
+.header_body{
+	background-color:rgba(223, 228, 234, .60);
+	height: 110vh;
+	width: 1050px;
+	margin: auto;
+	padding: 5px;
 }
 .row {
 	max-width: 1140px;
 	margin: 0 auto;
+}
+ul {
+	
+	list-style-image: url(../vendors/fonts/checkmark.svg);
 }
  
 /*MENU DE NAVEGACION PRINCIPAL*/
@@ -68,15 +79,18 @@ header {
 }
 
 .imagen-principal {
-	width: 200px;
-	height: auto;
-	border: auto;
+	width: 170px;
+	height: 190px;
+	margin:auto auto auto 155px;
 	border-radius: 100px; 
-	margin-left: 150px;
 }
 /*****************************/
 h2 {
 	text-align: center;
+	border-bottom: 2px solid #eb4d4b;
+	width: 400px;
+	margin: auto;
+	line-height: 2.2;
 }
 
 /***ICONOS PRINCIPAL***/
@@ -85,7 +99,7 @@ h2 {
 	list-style: none;
 }
 .iconos-header li {
-display: inline-block;
+	display: inline-block;
 }
 .iconos-header li ion-icon {
 	text-decoration: none;
@@ -111,15 +125,25 @@ display: inline-block;
 /**********************/
 
 .conoceme {
-	background:linear-gradient(#badc58,#f1f2f6) 
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/fondo_body1.jpg);
+	background-size: cover;
+	background-repeat: round;
+	background-attachment: fixed;
+}
+.Test {
+	background-color:rgba(223, 228, 234, .60);
+	width: 1050px;
+	margin: auto;
+	padding: 5px;
+}
+.ion-icon-conoceme {
+	color:#eb4d4b; 
+	font-size: 205%;
+	line-height: 320%;
+	vertical-aling: middle;
+	margin-top: -5px;
 }
 
-.conoceme h2 {
-	border-bottom: 2px solid #d63031;
-	width: 455px;
-	margin: auto;
-	line-height: 2.2;
-}
 .presentacion {
 	line-height: 145%;
 	width: 70%;
@@ -135,17 +159,26 @@ display: inline-block;
 }
 
 /**********************/
-
+.concretemos_body{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/fondo_body1.jpg);
+	background-size: cover;
+	background-repeat: round;
+	background-attachment: fixed;
+}
 .concretemos {
+	background-color:rgba(223, 228, 234, .60);
 	height: 70vh; 
-	background: linear-gradient( #f1f2f6,#F8EFBA)  
+	width: 1050px;
+	margin: auto;
+	padding: 5px;
 }
 .concretemos .detalles{
-	margin-left: 140px;
+	margin-left: 120px;
 }
 .concretemos p {
 	text-align: center;
 }
+.concretemos ul {line-height: 140%;}
 .concretemos div details ul { list-style: inside; }
 .concretemos div details { cursor: pointer; }
 .concretemos div details summary {color: #d63031; } 
@@ -153,13 +186,123 @@ display: inline-block;
 
 /***********************************/
 
+.donde_body {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/fond.jpg);
+	background-size: cover;
+	background-repeat: round;
+	background-attachment: fixed;
+}
 .donde { 
-	background: linear-gradient(#F8EFBA,#f7d794);
+	background-color:rgba(223, 228, 234, .60);
+	height: 80vh; 
+	width: 1050px;
+	margin: auto;
+	padding: 5px;	
 }
-
 .donde div:last-child {
-	margin-left: 355px;
+	margin: auto;
 }
-.donde {height: 65vh;}
 .donde p, h3{ text-align: center;}
+.donde ul {line-height: 170%; width: 570px; margin: auto 25%; display: inline-table; }
 
+.donde ul li a {
+	text-decoration: none;
+	color: #c23616;
+	transition: color 0.2s, font-size 0.2s;
+}
+.donde ul li a:hover {
+	color: #e84118;
+	font-size: 115%;
+}
+/**************************/
+.areas_interes_body {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/fond.jpg);
+	background-size: cover;
+	background-repeat: round;
+	background-attachment: fixed;
+}
+
+.areas_interes {
+	background-color:rgba(223, 228, 234, .60);
+	height: 75vh; 
+	width: 1050px;
+	margin: auto;
+	padding: 5px;
+}
+
+.areas_interes p {
+	text-align: justify;
+	line-height: 155%;
+	width: 625px;
+	margin: auto;
+	margin-top: 15px;
+}
+.a_darle { 
+	margin-top: 15px;
+	text-align: center;
+	width: 825px;
+	background: #badc58;
+	margin: 25px auto;
+	color:#ecf0f1;
+}
+
+/****************************/
+.final_body {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/footer_body1.jpg);
+	background-size: cover;
+	background-repeat: round;
+	background-attachment: fixed;
+}
+
+.final {
+	background-color:rgba(223, 228, 234, .60);
+	width: 1050px;
+	margin: auto;
+	padding: 5px;
+
+}
+.final ul {
+	text-align: center;
+	line-height: 50%;
+	width: 550px;
+	margin: auto;
+}
+.final ul li {
+	display: inline-block;
+	text-decoration: none;
+	list-style: none;
+	font-size: 55px;
+	color: #2f3640;
+	padding: 25px;
+	
+}
+.final ul li a {
+	text-decoration: none;
+	color: #353b48;
+}
+.despedida{ 
+	text-align: center;
+	color:#ecf0f1;
+	width: 875px;
+	height: 35px;
+	background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+	margin: 2% auto;
+	padding-top: 6px;
+}
+
+.logo-linkedin:hover {
+	color:#007bb5;
+}
+.logo-twitter:hover{
+	color:#55acee;
+}
+.logo-instagram:hover{
+	color:#bc2a8d;
+}
+.logo-github:hover{
+	color:#000000;
+}
+.R{
+	transition: color 0.2s;
+	padding: 2px;
+}
