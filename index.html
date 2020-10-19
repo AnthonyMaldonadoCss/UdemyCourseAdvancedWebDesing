@@ -5,9 +5,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="resources/css/estilo.css">
+	<link rel="stylesheet" href="resources/css/mediaQuerys.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+	<!--<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">-->
 
 	<meta name="description" content=" Portafolio desarrollo Web Anthony Maldonado">
 	<title>Anthony Maldonado</title>
@@ -26,12 +27,11 @@
 				</nav>
 
 			<div class="presentacion-img">
-				<img src="resources/img/personal.JPG" alt="Anthony Maldonado" class="imagen-principal">
 				<div class="presentacion-text">
 					<h1>Anthony Maldonado</h1>
-					<h1>Desarrollador Web Jr.</h1>
-					<h3>Este es lo que se conoce como Portafolio <br> Pero tambien hará de blog por el momento</h3>
-					<p>Que lo disfruten</p>		
+					<h1>Desarrollador Web FrontEnd Jr.</h1>
+					<!--<h3>Este es lo que se conoce como Portafolio <br> Pero tambien hará de blog por el momento</h3>
+					<p>Que lo disfruten</p>-->
 				</div>
 				<div>
 					<ul class="iconos-header">
@@ -48,9 +48,15 @@
 	<section class="conoceme">
 		<section class="Test">
 				<div class="row">
-				<h2>¿Quien soy?</h2>
-				<p class="presentacion">Me encanta le tecnologia, soy el tipo de persona que rara vez le sale algo a la primera, pero <strong>jamas dejaria de intentarlo.</strong>  <br>Justo asi soy </p>
-			</div>
+					<h2>¿Quien soy?</h2>
+					<p class="presentacion">Me encanta la tecnologia, soy el tipo de persona que rara vez le sale algo a la primera, pero <strong>jamás dejaria de intentarlo.</strong>  <br>Justo asi soy </p>
+				</div>
+				<div class="row long-copy">
+					<h2>Sobre mi</h2>
+					<p>
+						Mi experiencia programando se remonta a los tiempos de universidad, 2015 aproximadamente, antes de eso no tenia ni idea de como "aparecian" las paginas web, en este gran centro de estudio aprendí eso y mucho mas. Pero la programacion la tome en serio despues del 2018 justo despues de mi graduacion, ¿Aja y que hiciste?, a principios del 2017 hasta finales del mismo año trabajé de: Analista de soporte, y a comienzos del 2018 a finales del mismo año fui: Algo asi como un <b>Sysadmin</b>, ¿como que "algo asi"?, a comiezos del 2018 el ente publico para el cual trabajaba decidio moverme a adiministrar servidores pero aun realizaba tareas de soporte ya que el soporte era de un nivel <i>medio-alto</i> y mis compañeros no lo dominabana aun <b>(configuracion de VPN - analisis de datos - problemas de conexion - compatibilidad de perifericos) todo esto bajo el S.O Debian.</b> Mi paso por el servidor fue expedito, pero sumamente beneficioso, aprendi fundamentos de redes, telefonía Ip, bases de datos, analisis de datos, seguridad informática, virtualizacion, respaldos, implementacion y despliegues, entre otras cosas. Sin embargo el desarrollo siempre estuvo en mi foco, de alguna manera no me salia de la mente dejar de programar a pesar mi habilidad con Linux y el SysAdmin. Asi que a finales de ese año decidi estudiar Python, pero por problemas familiares el desarrollo Web no llegaria en concreto a mi vida si no a finales del 2018 y comienzos del 2020 donde descrubí a fondo JavaScript y me enamoré. Aqui me tienen.
+					</p>
+				</div>
 			<div class="row">
 				<div class="col span-1-of-3 IUJO">
 						<ion-icon name="school" class="ion-icon-conoceme"></ion-icon>
@@ -77,28 +83,81 @@
 				<h2>Conocimientos</h2>
 				<p>¿Que he estudiado hasta ahora?</p>
 			</div>
-			<div class="col span-1-of-4 detalles">
-				<details>
-					<summary>
-						<b>HTML</b>
-					</summary>
+			<div class="cerrado">
+					<div class="col span-1-of-4 detalles">
+					<details>
+						<summary>
+							<b>HTML</b>
+						</summary>
+							<ul>
+								<li>Sintaxis basica</li>
+								<li>Validaciones</li>
+								<li>Formularios</li>
+								<li>Buenas practicas</li>
+								<li>SEO</li>
+								<li>Accesibilidad</li>
+							</ul>
+					</details>
+				</div>
+				<div class="col span-1-of-4">
+					<details>
+						<summary>
+							<b>CSS</b>	
+						</summary>
+					
+						<ul>
+							<li>Responsive Desing and Media Querys</li>
+							<li>Floats</li>
+							<li>Posicionamiento</li>
+							<li>Box Model</li>
+							<li>CSS Grid</li>
+							<li>Flex Box</li>
+						</ul>	
+					</details>
+				</div>
+
+				<div class="col span-1-of-4">
+					<details>
+						<summary>
+							<b>JavaScript</b>	
+						</summary>
 						<ul>
 							<li>Sintaxis basica</li>
-							<li>Validaciones</li>
-							<li>Formularios</li>
-							<li>Buenas practicas</li>
-							<li>SEO</li>
-							<li>Accesibilidad</li>
-						</ul>
-				</details>
-			</div>
+							<li>DOM</li>
+							<li>Scope</li>
+							<li>Prototype</li>
+							<li>Strict</li>
+						</ul>	
+					</details>
+				</div>
 
-			<div class="col span-1-of-4">
-				<details>
-					<summary>
-						<b>CSS</b>	
-					</summary>
-				
+				<div class="col span-1-of-4">
+					<details>
+						<summary>
+							<b>Linux</b>	
+						</summary>
+						<ul>
+							<li>Instalacion</li>
+							<li>Configuracion</li>
+							<li>Monitorizacion</li>
+						</ul>	
+					</details>
+				</div>
+			</div>
+			<section class="concretemos_js">
+				<div class="col span-1-of-4">
+					<b>HTML</b>
+					<ul>
+						<li>Sintaxis basica</li>
+						<li>Validaciones</li>
+						<li>Formularios</li>
+						<li>Buenas practicas</li>
+						<li>SEO</li>
+						<li>Accesibilidad</li>
+					</ul>
+				</div>
+				<div class="col span-1-of-4">
+					<b>CSS</b>
 					<ul>
 						<li>Responsive Desing and Media Querys</li>
 						<li>Floats</li>
@@ -106,37 +165,27 @@
 						<li>Box Model</li>
 						<li>CSS Grid</li>
 						<li>Flex Box</li>
-					</ul>	
-				</details>
-			</div>
-
-			<div class="col span-1-of-4">
-				<details>
-					<summary>
-						<b>JavaScript</b>	
-					</summary>
+					</ul>
+				</div>
+				<div class="col span-1-of-4">
+					<b>JavaScript</b>
 					<ul>
 						<li>Sintaxis basica</li>
 						<li>DOM</li>
 						<li>Scope</li>
 						<li>Prototype</li>
 						<li>Strict</li>
-					</ul>	
-				</details>
-			</div>
-
-			<div class="col span-1-of-4">
-				<details>
-					<summary>
-						<b>Linux</b>	
-					</summary>
+					</ul>			
+				</div>
+				<div class="col span-1-of-4">
+					<b>Linux</b>
 					<ul>
 						<li>Instalacion</li>
 						<li>Configuracion</li>
 						<li>Monitorizacion</li>
-					</ul>	
-				</details>
-			</div>
+					</ul>			
+				</div>
+			</section>
 		</section>
 	</section>
 
@@ -185,7 +234,8 @@
 				<p class="despedida"><i>Derechos reservados 2020 - Anthony Maldonado</i></p>
 			</div>
 		</section>
-	</footer>	
-<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+	</footer>
+	<script src="resources/js/JsVanilla.js"></script>	
+<!--<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>-->
 </body>
 </html>

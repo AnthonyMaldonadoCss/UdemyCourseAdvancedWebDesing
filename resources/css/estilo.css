@@ -14,14 +14,14 @@ html,body{
 	overflow-x: hidden; 
 }
 header {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../img/fondo_principal.JPG);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/fondo_principal.JPG);
 	background-size: cover;
 	background-repeat: round;
 	
 	background-attachment: fixed;
 }
 .header_body{
-	background-color:rgba(223, 228, 234, .60);
+	background-color:rgba(245, 245, 295, .75);
 	height: 110vh;
 	width: 1050px;
 	margin: auto;
@@ -64,24 +64,24 @@ ul {
 
 /*****IMAGEN PRINCIPAL**********/
 
-.presentacion-img {
-	position: absolute;
+/*.presentacion-img {
+	position: relative;
 	left: 30%;
-}
+}*/
 
 
 .presentacion-text {
 	text-align: center;
-	color: #f1f2f6;
-	line-height: 150%;
+	color: #2f3640;
+	line-height: 290%;
 	word-spacing: 3px; 
 	letter-spacing: 1px;
+	margin-top: 155px;
 }
-
 .imagen-principal {
 	width: 170px;
 	height: 190px;
-	margin:auto auto auto 155px;
+	margin: auto;
 	border-radius: 100px; 
 }
 /*****************************/
@@ -131,11 +131,19 @@ h2 {
 	background-attachment: fixed;
 }
 .Test {
-	background-color:rgba(223, 228, 234, .60);
+	background-color:rgba(245, 245, 295, .75);
 	width: 1050px;
 	margin: auto;
 	padding: 5px;
 }
+
+.long-copy p {
+	line-height: 140%;
+	font-size: 115%;
+	margin: 55px 12px 55px 12px;
+	text-align: justify;
+}
+
 .ion-icon-conoceme {
 	color:#eb4d4b; 
 	font-size: 205%;
@@ -166,7 +174,7 @@ h2 {
 	background-attachment: fixed;
 }
 .concretemos {
-	background-color:rgba(223, 228, 234, .60);
+	background-color:rgba(245, 245, 295, .75);
 	height: 70vh; 
 	width: 1050px;
 	margin: auto;
@@ -184,6 +192,13 @@ h2 {
 .concretemos div details summary {color: #d63031; } 
 .concretemos div details summary b {color: black;}
 
+
+.concretemos_js {
+	
+	display: inline-block;
+	list-style: none;
+}
+
 /***********************************/
 
 .donde_body {
@@ -193,7 +208,7 @@ h2 {
 	background-attachment: fixed;
 }
 .donde { 
-	background-color:rgba(223, 228, 234, .60);
+	background-color:rgba(245, 245, 295, .75);
 	height: 80vh; 
 	width: 1050px;
 	margin: auto;
@@ -223,7 +238,7 @@ h2 {
 }
 
 .areas_interes {
-	background-color:rgba(223, 228, 234, .60);
+	background-color:rgba(245, 245, 295, .75);
 	height: 75vh; 
 	width: 1050px;
 	margin: auto;
@@ -255,7 +270,7 @@ h2 {
 }
 
 .final {
-	background-color:rgba(223, 228, 234, .60);
+	background-color:rgba(245, 245, 295, .75);
 	width: 1050px;
 	margin: auto;
 	padding: 5px;
@@ -288,6 +303,7 @@ h2 {
 	background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
 	margin: 2% auto;
 	padding-top: 6px;
+	border-radius: 100px;
 }
 
 .logo-linkedin:hover {
@@ -305,4 +321,7 @@ h2 {
 .R{
 	transition: color 0.2s;
 	padding: 2px;
+}
+{
+	color:rgba(245, 245, 195, .75);
 }
