@@ -1,0 +1,14 @@
+{
+  "name": "natours_udemy_advanced-wen-desing",
+  "version": "1.0.0",
+  "description": "learnig advanced web desing",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Anthony Maldonado",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
