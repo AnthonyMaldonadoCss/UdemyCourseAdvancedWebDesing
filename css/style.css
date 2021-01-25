@@ -419,6 +419,72 @@ body {
   .car__heading-span--3 {
     background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
 
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: table;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .4s .2s; }
+  .popup__left {
+    width: 33.333333%;
+    display: table-cell; }
+  .popup__right {
+    width: 66.66666667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 3rem;
+    column-gap: 3rem;
+    -moz-column-rule: 1px solid #777;
+    column-rule: 1px solid #777;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .popup__close:link, .popup__close:visited {
+    color: #777;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1; }
+    .popup__close:link:hover, .popup__close:visited:hover {
+      color: #55c57a; }
+
 .story {
   width: 75%;
   margin: 0 auto;
@@ -648,7 +714,7 @@ body {
     color: #55c57a;
     transform: translateX(1rem); }
   .navigation__checkbox:checked ~ .navigation__background {
-    transform: scale(60); }
+    transform: scale(40); }
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
     width: 100%; }
@@ -666,8 +732,7 @@ body {
       left: 0;
       transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
     .navigation__icon::before {
-      top: -.8rem;
-      transform-origin: right; }
+      top: -.8rem; }
     .navigation__icon::after {
       top: .8rem; }
   .navigation__button:hover .navigation__icon::before {

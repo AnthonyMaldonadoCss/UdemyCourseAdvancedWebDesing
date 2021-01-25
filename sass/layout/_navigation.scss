@@ -86,7 +86,7 @@
 	}
 
 	&__checkbox:checked ~ &__background {
-		transform: scale(60);
+		transform: scale(40);
 	}
 	&__checkbox:checked ~ &__nav {
 		opacity: 1;
@@ -117,7 +117,6 @@
 
 		&::before {
 			top: -.8rem;
-			transform-origin: right;
 		}
 		&::after {
 			top: .8rem;
