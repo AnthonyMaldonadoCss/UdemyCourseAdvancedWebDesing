@@ -67,6 +67,10 @@
 		animation: moveInButtom 1s ease-out .65s;
 		animation-fill-mode: backwards;
 	}
+
+	&--popup {
+		left: 19%;
+	}
 }
 
 .btn-text {
@@ -91,6 +95,7 @@
 		box-shadow: 0 .5rem 1rem rgba($color-black, .15);
 		transform: translateY(0px); 
 	}
+
 }
 
 
