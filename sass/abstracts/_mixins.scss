@@ -45,3 +45,9 @@ $breakpoint argument choices:
 		@media (min-width: 112.5em) {@content}; //1800px
 	}
 }
+
+@mixin resolution {
+	@media (min-resolution:  192dpi) and (min-width: 37.5em), (min-width: 125em) {
+		
+	}
+}
