@@ -73,7 +73,7 @@ body {
     transform: translate(0); } }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.3;
@@ -109,7 +109,7 @@ body {
     animation: moveInRigth 1s ease-out; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
-        letter-spacing: .5rem; } }
+        letter-spacing: 0.5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -117,10 +117,9 @@ body {
   font-weight: 700;
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
-  background-clip: text;
-  color: transparent;
+  color: black;
   letter-spacing: 2px;
-  transition: all .2s; }
+  transition: all 0.2s; }
   @media (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
@@ -311,7 +310,7 @@ body {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: all .3s; }
+  transition: all 0.3s; }
   @media (max-width: 56.25em) {
     .feature-box {
       padding: 2rem; } }
@@ -321,11 +320,10 @@ body {
     transform: translateY(-1.5rem) scale(1.03); }
   .feature-box__icon {
     font-size: 6rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     display: inline-block;
     background-image: linear-gradient(to right, #7ed56f, #28b485);
-    background-clip: text;
-    color: transparent; }
+    color: #7ed56f; }
     @media (max-width: 56.25em) {
       .feature-box__icon {
         margin-bottom: 0; } }
@@ -345,10 +343,10 @@ body {
   padding: 1.5rem 2rem;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.5);
-  border-bottom: 3px solid trasnparent;
+  border-bottom: 3px solid transparent;
   width: 90%;
   display: block;
-  transition: all .4s; }
+  transition: all 0.4s; }
   @media (max-width: 56.25em) {
     .form__input {
       width: 100%; } }
@@ -365,9 +363,9 @@ body {
   font-size: 1.2rem;
   font-weight: 700;
   margin-left: 2rem;
-  margin-top: .7rem;
+  margin-top: 0.7rem;
   display: block;
-  transition: all .3s; }
+  transition: all 0.3s; }
 
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
@@ -399,7 +397,7 @@ body {
   display: inline-block;
   position: absolute;
   left: 0;
-  top: -.4rem; }
+  top: -0.4rem; }
   .form__radio-button::after {
     content: "";
     display: block;
@@ -412,7 +410,7 @@ body {
     transform: translate(-50%, -50%);
     background-color: #ffb900;
     opacity: 0;
-    transition: opacity .2s; }
+    transition: opacity 0.2s; }
 
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
@@ -688,12 +686,25 @@ body {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   margin-top: -10rem;
-  transform: skewY(-7deg); }
+  transform: skewY(-7deg);
+  /*@mixin resolution {
+		background-image: linear-gradient(to right bottom,
+		rgba($color-tertiary-ligth, 0.8),
+		rgba($primary-color-dark, 0.8)), 
+		url(../img/nat-4.jpg);
+		background-size: cover;
+		margin-top: -10rem;
+	}*/ }
   .section-features > * {
     transform: skewY(7deg); }
   @media (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0; } }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    .section-features {
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+      background-size: cover;
+      margin-top: -10rem; } }
 
 .section-tours {
   background-color: #f7f7f7;
@@ -718,7 +729,7 @@ body {
       padding: 10rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(126, 213, 111, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(126, 213, 111, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(/css/img/natours__example.jpg);
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
@@ -835,11 +846,14 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg); } }
   @media (max-width: 37.5em) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
